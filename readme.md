@@ -77,7 +77,21 @@ MariaDB [cs166db]> show tables;
 +-------------------+
 1 row in set (0.00 sec)
 ```
-### create table -- blog -- 
+### create table -- blog --  
+```sh
+ create table blog (title varchar(255), content text(65535), user varchar(255));
+Query OK, 0 rows affected (0.07 sec)
+MariaDB [cs166db]> select * from blog
+    -> ;
++--------------+-----------------------------------------+-------+
+| title        | content                                 | user  |
++--------------+-----------------------------------------+-------+
+| hello world  | hello world                             | test1 |
+| hey          | <script> alert("Hello world");<script>  | test1 |
++--------------+-----------------------------------------+-------+
+2 rows in set (0.02 sec)
+
+```
 
 
 

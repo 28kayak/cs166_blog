@@ -3,7 +3,8 @@
 
 //Connect to the database
 Class.forName("com.mysql.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cs166db", "cs166db", "Spring2017!");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cs166db", "cs166db", "Spring2017!"); 
+//getConnetion(str url, str user, str password )
 
 //Check user
 String fullname = request.getParameter( "fullname" );
